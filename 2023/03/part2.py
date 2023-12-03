@@ -1,4 +1,4 @@
-sum = 0
+s = 0
 n = ""
 ok = False
 gears = {}
@@ -6,7 +6,7 @@ gears = {}
 posx = (-1, -1, -1, 0, 1, 1, 1, 0)
 posy = (-1, 0, 1, 1, 1, 0, -1, -1)
 
-def isSymbol(x):
+def issymbol(x):
     return x!='.' and not ( x in [str(i) for i in range(10)] )
 
 
@@ -19,7 +19,7 @@ with open("input.txt") as file:
                 if ok is False:
                     for k in range(8):
                         try:
-                            if isSymbol(M[i + posx[k]][j + posy[k]]):
+                            if issymbol(M[i + posx[k]][j + posy[k]]):
                                 gearPos = (i + posx[k], j + posy[k])
                                 ok = True
                                 gears[gearPos] = gears.get(gearPos,[])
@@ -34,6 +34,6 @@ for g in gears:
         prod = 1
         for val in gears[g]:
             prod*=val
-        sum += prod
+        s += prod
 
-print(sum)
+print(s)

@@ -1,4 +1,4 @@
-sum = 0
+s = 0
 d = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 with open("input.txt") as file:
     for line in file:
@@ -9,5 +9,5 @@ with open("input.txt") as file:
             for i, j in enumerate(d):
                 if line[k:].startswith(j):
                     digits.append(str(i + 1))
-        sum += int(digits[0]+digits[-1])
-print(sum)
+        s += int(digits[0]+digits[-1])
+print(s)

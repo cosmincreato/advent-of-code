@@ -1,11 +1,11 @@
-sum = 0
+s = 0
 n = ""
 ok = False
 
 posx = (-1, -1, -1, 0, 1, 1, 1, 0)
 posy = (-1, 0, 1, 1, 1, 0, -1, -1)
 
-def isSymbol(x):
+def issymbol(x):
     return x!='.' and not ( x in [str(i) for i in range(10)] )
 
 
@@ -18,10 +18,10 @@ with open("input.txt") as file:
                 if ok is False:
                     for k in range(8):
                         try:
-                            if isSymbol(M[i + posx[k]][j + posy[k]]): ok = True
+                            if issymbol(M[i + posx[k]][j + posy[k]]): ok = True
                         except: continue
             else:
-                if ok is True: sum+=int(n)
+                if ok is True: s+=int(n)
                 n = ""
                 ok = False
-print(sum)
+print(s)
