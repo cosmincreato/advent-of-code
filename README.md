@@ -1,2 +1,2 @@
-# Advent of Code 2023 🎄
-My solutions for [Advent of Code](https://adventofcode.com/2023), written in Python.
+# Advent of Code 🎄
+My solutions for [Advent of Code](https://adventofcode.com), written in Python.
