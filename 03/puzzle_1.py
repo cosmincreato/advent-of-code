@@ -4,6 +4,7 @@ ok = False
 
 posx = (-1, -1, -1, 0, 1, 1, 1, 0)
 posy = (-1, 0, 1, 1, 1, 0, -1, -1)
+
 def isSymbol(x):
     return x!='.' and not ( x in [str(i) for i in range(10)] )
 
