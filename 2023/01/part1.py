@@ -7,3 +7,4 @@ with open("input.txt") as file:
                 digits.append(v)
         s += int(digits[0]+digits[-1])
 print(s)
+
