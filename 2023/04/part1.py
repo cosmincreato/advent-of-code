@@ -6,10 +6,10 @@ with open("input.txt") as file:
         numbers = card.split(": ")[1].strip().split(" | ")
         for win in numbers[0].split():
             for mine in numbers[1].split():
-                if win==mine:
+                if win == mine:
                     if pts == 0:
                         pts = 1
                     else:
                         pts *= 2
-        s+=pts
+        s += pts
 print(s)

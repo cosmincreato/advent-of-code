@@ -10,9 +10,9 @@ with open("input.txt") as file:
         amount[count] = amount.get(count, 1)
         for win in numbers[0].split():
             for mine in numbers[1].split():
-                if win==mine:
+                if win == mine:
                     count += 1
                     amount[count] = amount.get(count, 1)
                     amount[count] += amount[cardId]
-        s+=amount[cardId]
+        s += amount[cardId]
 print(s)
